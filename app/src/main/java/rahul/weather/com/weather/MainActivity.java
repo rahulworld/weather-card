@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
         //weatherFont = Typeface.createFromAsset(getAssets(), "fonts/weathericons-regular-webfont.ttf");
         cityField = (TextView)findViewById(R.id.city_field);
@@ -30,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         function.placeIdTask asyncTask =new function.placeIdTask(new function.AsyncResponse() {
             public void processFinish(String weather_city, String weather_description, String weather_temperature, String weather_humidity, String weather_pressure, String weather_updatedOn, String weather_iconText, String sun_rise) {
 
-                cityField.setText(weather_city);
+                cityField.setText("City : "+weather_city);
                 updatedField.setText(weather_updatedOn);
                 detailsField.setText(weather_description);
-                currentTemperatureField.setText(weather_temperature);
+                currentTemperatureField.setText(weather_temperature +"C");
                 humidity_field.setText("Humidity: "+weather_humidity);
                 pressure_field.setText("Pressure: "+weather_pressure);
                 weatherIcon.setText(Html.fromHtml(weather_iconText));
