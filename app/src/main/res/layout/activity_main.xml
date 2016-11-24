@@ -11,17 +11,6 @@
     android:background="#2c3e50"
     android:padding="20dp"
     tools:context="rahul.weather.com.weather.MainActivity">
-
-    <TextView
-        android:id="@+id/city_field"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="City"
-        android:textColor="#FFFFFF"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <TextView
         android:id="@+id/updated_field"
         android:layout_width="wrap_content"
@@ -34,6 +23,15 @@
         android:textSize="13sp" />
 
     <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="Latitude : "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp" />
+    <TextView
         android:id="@+id/weather_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,7 +42,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="90sp"
         />
-
     <TextView
         android:id="@+id/current_temperature_field"
         android:layout_width="wrap_content"
@@ -85,4 +82,35 @@
         android:text="Pressure"
         android:textAppearance="?android:attr/textAppearanceMedium"
         />
+
+    <TextView
+        android:id="@+id/city_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/weather_icon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Longitude : "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp"
+        android:layout_below="@+id/latitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_weather"
+        android:text="Get Weather detail"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/longitude"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
