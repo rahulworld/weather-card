@@ -5,7 +5,7 @@ An android app get own location in degrees and Weather and Address.
 
 ### Example:
 
-![](/screenshots/Screenshot_2016-11-24-20-07-05.png)
+![Screenshots](/screenshots/Screenshot_2016-11-24-20-07-05.png)
 
 
 #### Code & Issues
