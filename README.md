@@ -1,6 +1,7 @@
 # weather-card
 
 GPS-Coordinates
+first start GPS in your device.
 An android app get own location in degrees and Weather and Address.
 
 ### Example:
